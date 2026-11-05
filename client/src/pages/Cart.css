@@ -1,0 +1,44 @@
+.cart h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-item{
+    background-color: coral;
+    margin-bottom: 20px;
+    text-align: center;
+    width:300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 20px;
+
+    position: relative;
+
+}
+
+.cart-item img{
+    width:100%;
+    border-radius: 20px;
+
+   
+}
+
+.cart button{
+    position:absolute;
+    right:10px;
+    top:10px;
+    background-color: aliceblue;
+    border:none;
+    outline: none;
+}
+
+.cart_test{
+    background-color: coral;
+    margin-bottom: 20px;
+    text-align: center;
+}
