@@ -4,6 +4,8 @@ const mongoose = require("mongoose");
 const User = require("./models/userModel");
 const Product = require("./models/productModel");
 
+require("dotenv").config();
+
 // import cors
 const cors = require("cors");
 
@@ -26,9 +28,7 @@ app.use("/products", require("./routes/productRoutes"));
 app.use("/cart", require("./routes/cartRoutes"));
 
 mongoose
-  .connect(
-    "mongodb+srv://g50218032_db_user:rxJZdQIMWTrXY8vs@cluster0.bmgdvlj.mongodb.net/?appName=Cluster0",
-  )
+  .connect(process.env.MONGO_URL)
   .then(() => {
     console.log("database connected");
   })
